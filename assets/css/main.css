@@ -84,7 +84,7 @@
 	}
 
 	.container {
-		width: 35em;
+		width: 43em;
 	}
 
 	@media screen and (max-width: 1680px) {
@@ -108,7 +108,8 @@
 		}
 
 		.container {
-			width: 35em;
+			width: 43em;
+			/*used to be 35em, 43 em for exapansion, changed here in @media max 1680 and in .container*/
 		}
 
 	}
@@ -1353,17 +1354,19 @@
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		/* border-bottom: dotted 1px; OLD A HREF STYLE, DOTTED UNDERLINE */
 		color: #081f44;
 		text-decoration: none;
+
 	}
 
+
 		a:hover {
-			border-bottom-color: transparent !important;
 			color: #081f44 !important;
 			text-decoration: none;
 		}
@@ -2735,7 +2738,7 @@
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
 			left: 50%;
-			margin-left: -17.5em;
+			margin-left: -21.5em;
 			padding: 2.5em;
 			position: absolute;
 		}
@@ -2751,8 +2754,8 @@
 /* Footer */
 
 	#footer {
-		min-height: 100vh;
-		padding: 0 0 12em 0;
+		min-height: 20vh;
+		/*padding: 0 0 12em 0;*/
 		position: relative;
 		text-align: center;
 	}
@@ -2802,7 +2805,59 @@
 						margin-left: 0;
 						padding-left: 0;
 					}
+/*BLANKFOOT (a blank footer) */
+	
+	#blankfoot {
+		min-height: 20vh;
+		position: relative;
+		text-align: center;
+	}
 
+		#blankfoot .container {
+			padding: 5em 2.5em 3em 2.5em ;
+			background: rgba(255, 255, 255, 0.95);
+			box-shadow: inset 0 1px 0 0 #dddddd;
+		}
+
+		#blankfoot footer {
+			bottom: 2em;
+			color: rgba(255, 255, 255, 0.5);
+			left: 0;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+		}
+
+			#blankfoot footer h1, #blankfoot footer h2, #blankfoot footer h3, #blankfoot footer h4, #blankfoot footer h5, #blankfoot footer h6, #blankfoot footer strong, #blankfoot footer b {
+				color: #ffffff;
+			}
+
+			#blankfoot footer a {
+				color: inherit;
+			}
+
+				#blankfoot footer a:hover {
+					color: #ffffff !important;
+				}
+
+			#blankfoot footer .copyright {
+				font-size: 0.8em;
+				line-height: 1em;
+				padding: 0;
+			}
+
+				#blankfoot footer .copyright li {
+					border-left: solid 1px rgba(255, 255, 255, 0.2);
+					display: inline-block;
+					margin: 0 0 0 1em;
+					padding: 0 0 0 1em;
+				}
+
+					#blankfoot footer .copyright li:first-child {
+						border-left: 0;
+						margin-left: 0;
+						padding-left: 0;
+					}
 /* Large */
 
 	@media screen and (max-width: 1680px) {
