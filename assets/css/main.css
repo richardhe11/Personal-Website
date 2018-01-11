@@ -1347,7 +1347,7 @@
 		}
 
 	body, input, select, textarea {
-		color: #6f7577;
+		color: #000000b3;
 		font-family: "Josefin Sans", sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
@@ -1361,14 +1361,14 @@
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
 		/* border-bottom: dotted 1px; OLD A HREF STYLE, DOTTED UNDERLINE */
-		color: #081f44;
+		color: #000000b3;
 		text-decoration: none;
 
 	}
 
 
 		a:hover {
-			color: #081f44 !important;
+			color: #00000080 !important;
 			text-decoration: none;
 		}
 
@@ -1386,7 +1386,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #61686b;
+		color: #000000b3;
 		font-weight: 800;
 		letter-spacing: 0.075em;
 		line-height: 1em;
